@@ -1,0 +1,19 @@
+{
+  "name": "gungnir",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "test:frontend": "serve"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "Anton Komarov <antonn.komm@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.7.0",
+    "serve": "^14.2.3"
+  }
+}

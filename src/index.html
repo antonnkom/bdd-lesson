@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css">
+    <title>Mocha + Chai BDD testing</title>
+</head>
+<body>
+    <!-- Text field with info field for testing -->
+    <textarea id="information-field" cols="58" rows="13" style="margin: 50px">
+        dark dark dark dark dark dark dark dark dark dark dark
+        dark dark dark dark dark dark dark dark dark dark dark
+        dark dark dark dark dark dark dark dark dark dark dark
+        dark dark dark dark dark dark dark dark dark dark dark
+        dark dark dark dark dark dark dark dark dark dark dark
+        dark dark dark dark dark true dark dark dark dark dark
+        dark dark dark dark dark dark dark dark dark dark dark
+        dark dark dark dark dark dark dark dark dark dark dark
+        dark dark dark dark dark dark dark dark dark dark dark
+        dark dark dark dark dark dark dark dark dark dark dark
+        dark dark dark dark dark dark dark dark dark dark dark
+    </textarea>
+
+    <div id="mocha"></div>
+    
+    <!-- Mocha and chai library scripts -->
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.0/chai.js"></script>
+
+    <script>
+        mocha.setup('bdd');
+    </script>
+
+    <script>
+        var expect = chai.expect;
+    </script>
+
+    <!-- Script with speca -->
+    <script src="test.js"></script>
+
+    <!-- Run script -->
+    <script>
+        mocha.run()
+    </script>
+</body>
+</html>
